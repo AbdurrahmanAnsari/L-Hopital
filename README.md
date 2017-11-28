@@ -42,7 +42,5 @@ deactivate
 C:\Users\<Your User Name>\Envs\Hospital_ENV
 ```
 
-![Virtual Environment Setup](img/Gear Icon.png)
-
 # Run Project
 - To run, click the green arrow button besides the dropdown used for configuration
