@@ -38,7 +38,9 @@ deactivate
 - To add your virtual environment as your interpreter, under File go to Settings.
 - Click on 'Project Interpreter', click the gear icon next to the interpreter selector, click 'Add local'
 - Browse to the location of your virtual environment, by default the location is
-```C:\Users\<Your User Name>\Envs\Hospital_ENV```
+```
+C:\Users\<Your User Name>\Envs\Hospital_ENV
+```
 
 ![Virtual Environment Setup](img/Gear Icon.png)
 
