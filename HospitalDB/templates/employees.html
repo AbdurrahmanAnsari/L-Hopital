@@ -1,0 +1,28 @@
+{% extends 'layout.html'%}
+
+{% block body%}
+    <h1>Employees</h1>
+
+    <table class="table table-bordered">
+        <tr>
+          <th>Employee ID</th>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>Position</th>
+        </tr>
+        {% for column in columns %}
+        <tr>
+          <td>{{ column[0] }}</td>
+          <td>{{ column[1] }}</td>
+          <td>{{ column[2] }}</td>
+          <td>{{ column[3] }}</td>
+          <td>{{ column[4] }}</td>
+          <td>{{ column[5] }}</td>
+          <td>{{ column[6] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

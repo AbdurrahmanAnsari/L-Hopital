@@ -1,0 +1,145 @@
+{% extends 'layout.html'%}
+
+{% block body%}
+<div class="container">
+    <h2>Which doctor did each patient see:</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Patient First Name</th>
+            <th>Patient Last Name</th>
+            <th>Doctor First Name</th>
+            <th>Doctor Last Name</th>
+        </tr>
+        {% for column in columns %}
+        <tr>
+          <td>{{ column[0] }}</td>
+          <td>{{ column[1] }}</td>
+          <td>{{ column[2] }}</td>
+          <td>{{ column[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="container">
+    <h2>Which employees are close to retirement:</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Employee ID</th>
+            <th>Employee First Name</th>
+            <th>Employee Last Name</th>
+        </tr>
+        {% for column in columns2 %}
+        <tr>
+          <td>{{ column[0] }}</td>
+          <td>{{ column[1] }}</td>
+          <td>{{ column[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="container">
+    <h2>Which doctor did Nicholas Ward see:</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Employee First Name</th>
+            <th>Employee Last Name</th>
+        </tr>
+        {% for column in columns3 %}
+        <tr>
+          <td>{{ column[0] }}</td>
+          <td>{{ column[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="container">
+    <h2>Which of the hospital staff visit the hospital:</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Employee ID</th>
+            <th>Employee First Name</th>
+            <th>Employee Last Name</th>
+        </tr>
+        {% for column in columns4 %}
+        <tr>
+          <td>{{ column[0] }}</td>
+          <td>{{ column[1] }}</td>
+          <td>{{ column[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="container">
+    <h2>How many employees does the hospital have:</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Employee Count</th>
+        </tr>
+        {% for column in columns5 %}
+        <tr>
+          <td>{{ column[0] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="container">
+    <h2>How many rooms does the hospital have:</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Room Count</th>
+        </tr>
+        {% for column in columns6 %}
+        <tr>
+          <td>{{ column[0] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="container">
+    <h2>How many patients live in Toronto:</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Number of patients</th>
+        </tr>
+        {% for column in columns7 %}
+        <tr>
+          <td>{{ column[0] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="container">
+    <h2>Which departments have less than 5 employees:</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Department Name:</th>
+        </tr>
+        {% for column in columns8 %}
+        <tr>
+          <td>{{ column[0] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="container">
+    <h2>What prescriptions does Raymond Bell have:</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Prescription:</th>
+        </tr>
+        {% for column in columns9 %}
+        <tr>
+          <td>{{ column[0] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

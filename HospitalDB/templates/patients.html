@@ -1,0 +1,30 @@
+{% extends 'layout.html'%}
+
+{% block body%}
+    <h1>Patients</h1>
+
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="/add_patient" methods="POST">Add Patient</a></li>
+    </ul>
+
+    <table class="table table-bordered">
+        <tr>
+          <th>Patient ID</th>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Address</th>
+        </tr>
+        {% for column in columns %}
+        <tr>
+          <td>{{ column[0] }}</td>
+          <td>{{ column[1] }}</td>
+          <td>{{ column[2] }}</td>
+          <td>{{ column[3] }}</td>
+          <td>{{ column[4] }}</td>
+          <td>{{ column[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
